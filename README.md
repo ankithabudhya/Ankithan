@@ -3,19 +3,25 @@
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" width="220"/>
 </p>
-# TITLE OF THE RESEARCH PAPER
 
-## IEEE Style Research Paper
+
+# LLM-Based Smart Healthcare Assistant
 
 ### Submitted by
 
-**Student Name 1**  
-USN / Roll Number  
-Department Name  
-Institution Name   
+**Student Name :** Ankitha N
 
-**Guide / Mentor:**  
-Faculty Name  
+**USN / Roll Number :** 1DA24MC007
+
+**Department Name :**  MCA
+
+**Institution Name :** Dr. Ambedkar Institute of Technology
+
+---
+
+## Guide / Mentor
+
+**Guide :** Harsha T R  
 
 
 ---
