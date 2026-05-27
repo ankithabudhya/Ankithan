@@ -65,11 +65,11 @@ Recent developments in AI-powered healthcare systems help improve healthcare acc
 Although existing healthcare chatbot systems provide useful healthcare assistance, they still face several limitations including:
 
 - Limited conversational intelligence[1][2]
-- Generic healthcare responses
-- Inaccurate disease prediction
-- Lack of emergency healthcare alerts
-- Poor personalization
-- Healthcare data privacy concerns
+- Generic healthcare responses[2]
+- Inaccurate disease prediction[1][3]
+- Lack of emergency healthcare alerts[2]
+- Poor personalization[1][2]
+- Healthcare data privacy concerns[3]
 
 These limitations reduce the efficiency and reliability of current intelligent healthcare systems.
 
@@ -79,7 +79,7 @@ These limitations reduce the efficiency and reliability of current intelligent h
 
 There is a growing need for intelligent healthcare systems capable of providing accurate symptom-based disease prediction, intelligent healthcare conversations, personalized healthcare recommendations, emergency healthcare alerts, and real-time healthcare analytics.
 
-Existing systems mainly focus on basic healthcare conversations and fail to provide advanced healthcare analytics, intelligent disease prediction, and proactive healthcare assistance.
+Existing systems mainly focus on basic healthcare conversations and fail to provide advanced healthcare analytics, intelligent disease prediction, and proactive healthcare assistance.[1][2][3]
 
 This research aims to address these limitations by proposing an intelligent AI-powered healthcare assistant framework.
 
@@ -100,7 +100,7 @@ This research aims to address these limitations by proposing an intelligent AI-p
 
 The proposed system focuses on symptom-based disease prediction, intelligent healthcare chatbot systems, healthcare analytics dashboards, emergency healthcare alert generation, and personalized healthcare guidance using AI and Deep Learning techniques.
 
-The system supports telemedicine platforms, remote patient monitoring systems, smart healthcare applications, and AI-powered healthcare assistance systems.
+The system supports telemedicine platforms, remote patient monitoring systems, smart healthcare applications, and AI-powered healthcare assistance systems.[1][2]
 
 ---
 
@@ -125,7 +125,7 @@ This section analyzes three important research papers related to AI-assisted hea
 
 ### Summary
 
-This paper explores how Large Language Models can be integrated into intelligent healthcare systems. The paper discusses healthcare AI applications, software engineering principles, healthcare data privacy, hallucination issues, and intelligent healthcare automation.
+This paper explores how Large Language Models can be integrated into intelligent healthcare systems. The paper discusses healthcare AI applications, software engineering principles, healthcare data privacy, hallucination issues, and intelligent healthcare automation.[1]
 
 The system improves healthcare accessibility and intelligent patient interaction using conversational AI techniques.
 
@@ -159,7 +159,7 @@ The system improves healthcare accessibility and intelligent patient interaction
 
 ### Summary
 
-This paper presents an intelligent healthcare chatbot system using Retrieval-Augmented Generation and Large Language Models for symptom analysis, healthcare guidance, and patient support.
+This paper presents an intelligent healthcare chatbot system using Retrieval-Augmented Generation and Large Language Models for symptom analysis, healthcare guidance, and patient support.[2]
 
 The system combines conversational AI, vector databases, and intelligent healthcare assistance to provide evidence-based healthcare responses and personalized medical support.
 
@@ -193,7 +193,7 @@ The system combines conversational AI, vector databases, and intelligent healthc
 
 ### Summary
 
-This paper focuses on developing privacy-preserving healthcare chatbots using Large Language Models. The system processes sensitive healthcare information locally while maintaining intelligent healthcare conversations and secure healthcare assistance.
+This paper focuses on developing privacy-preserving healthcare chatbots using Large Language Models. The system processes sensitive healthcare information locally while maintaining intelligent healthcare conversations and secure healthcare assistance.[3]
 
 The paper also discusses healthcare data protection and secure healthcare AI systems.
 
@@ -228,15 +228,15 @@ The paper also discusses healthcare data protection and secure healthcare AI sys
 
 ## Gap 1
 
-Existing healthcare assistant systems provide limited intelligent healthcare conversations and weak symptom understanding, which reduces the accuracy of healthcare guidance.
+Existing healthcare assistant systems provide limited intelligent healthcare conversations and weak symptom understanding, which reduces the accuracy of healthcare guidance.[1][2]
 
 ## Gap 2
 
-Most healthcare chatbot systems lack explainable disease prediction support and advanced healthcare analytics for intelligent patient monitoring.
+Most healthcare chatbot systems lack explainable disease prediction support and advanced healthcare analytics for intelligent patient monitoring.[1][2]
 
 ## Gap 3
 
-Current AI healthcare systems provide limited emergency healthcare alert generation and face healthcare data privacy and security challenges.
+Current AI healthcare systems provide limited emergency healthcare alert generation and face healthcare data privacy and security challenges.[2][3]
 
 ---
 
@@ -253,7 +253,7 @@ Most existing healthcare chatbot systems focus mainly on healthcare conversation
 - Emergency healthcare alerts
 - Advanced healthcare dashboard monitoring
 
-This reduces healthcare assistance quality, system reliability, and healthcare accessibility.
+This reduces healthcare assistance quality, system reliability, and healthcare accessibility.[1][2][3]
 
 ---
 
@@ -285,7 +285,7 @@ The proposed system introduces an Intelligent Healthcare Analytics Module that p
 
 Traditional healthcare systems require manual consultations and hospital visits for preliminary symptom analysis and healthcare guidance.
 
-Although AI-based healthcare assistants can automate healthcare conversations and disease prediction, they still suffer from limitations such as inaccurate responses, weak personalization, privacy concerns, and limited emergency healthcare support.
+Although AI-based healthcare assistants can automate healthcare conversations and disease prediction, they still suffer from limitations such as inaccurate responses, weak personalization, privacy concerns, and limited emergency healthcare support.[1][2][3]
 
 Therefore, there is a need for an intelligent AI-powered healthcare assistant system that combines Large Language Models, Deep Learning, symptom-based disease prediction, conversational healthcare AI, emergency alert generation, and healthcare analytics to improve healthcare accessibility and intelligent healthcare support.
 
@@ -293,7 +293,7 @@ Therefore, there is a need for an intelligent AI-powered healthcare assistant sy
 
 # 6. Proposed Solution
 
-The proposed system, LLM-Based Smart Healthcare Assistant, combines LSTM Deep Learning models, Large Language Models, NLP techniques, healthcare analytics dashboards, and intelligent chatbot systems to improve healthcare accessibility and disease prediction support.
+The proposed system, **LLM-Based Smart Healthcare Assistant**, combines LSTM Deep Learning models, Large Language Models, NLP techniques, healthcare analytics dashboards, and intelligent chatbot systems to improve healthcare accessibility and disease prediction support.
 
 ## 6.1 System Overview
 
@@ -360,19 +360,19 @@ Output Generation
 
 ## 7.3 Data Flow
 
-The user provides symptoms to the system.
+- The user provides symptoms to the system.
 
-The preprocessing module prepares healthcare data.
+- The preprocessing module prepares healthcare data.
 
-LSTM predicts diseases based on symptoms.
+- LSTM predicts diseases based on symptoms.
 
-LLM generates intelligent healthcare guidance.
+- LLM generates intelligent healthcare guidance.
 
-The emergency module detects critical symptoms.
+- The emergency module detects critical symptoms.
 
-The dashboard visualizes healthcare analytics.
+- The dashboard visualizes healthcare analytics.
 
-Final healthcare assistance is displayed to users.
+- Final healthcare assistance is displayed to users.
 
 ---
 
@@ -425,7 +425,8 @@ Final healthcare assistance is displayed to users.
 
 # 9. Experimental Setup
 
-The system is trained and tested using healthcare datasets, symptom datasets, and medical conversation datasets collected from open-source repositories.
+The system is trained and tested using healthcare datasets, symptom datasets, and medical conversation datasets collected from open-source repositories.[1][2][3]
+Training and testing are performed using AI models and automated healthcare analytics techniques.
 
 ## Datasets Used
 
@@ -450,15 +451,18 @@ The system is trained and tested using healthcare datasets, symptom datasets, an
 
 | Metric | Existing System | Proposed System |
 |---|---|---|
-| Accuracy | 84% | Improved |
-| Precision | 82% | Improved |
-| Recall | 80% | Improved |
-| F1-Score | 81% | Improved |
-| Response Time | Moderate | Faster |
+| Accuracy | 84% |  |
+| Precision | 82% |  |
+| Recall | 80% |  |
+| F1-Score | 81% |  |
+| Response Time | Moderate |  |
 
 ---
 
-## 10.2 Observations
+## 10.2 Graphical Analysis
+---
+
+## 10.3 Observations
 
 The proposed system achieved improved disease prediction accuracy and better conversational healthcare support compared to existing systems. Intelligent healthcare analytics and emergency alerts enhanced healthcare accessibility and patient engagement.
 
@@ -468,7 +472,7 @@ The proposed system achieved improved disease prediction accuracy and better con
 
 The proposed system improves healthcare accessibility and intelligent healthcare assistance using AI-based disease prediction, conversational healthcare AI, healthcare analytics dashboards, and emergency alert generation.
 
-Challenges include healthcare data privacy, model explainability, real-time healthcare accuracy, and computational requirements.
+Challenges include healthcare data privacy, model explainability, real-time healthcare accuracy, and computational requirements.[1][2][3]
 
 ---
 
@@ -494,7 +498,7 @@ Challenges include healthcare data privacy, model explainability, real-time heal
 
 # 14. Conclusion
 
-This paper presented a comparative study of three AI-powered healthcare research papers and analyzed their strengths and limitations. Existing systems face challenges such as limited healthcare conversations, privacy concerns, weak emergency detection, and lack of advanced healthcare analytics.
+This paper presented a comparative study of three AI-powered healthcare research papers and analyzed their strengths and limitations. Existing systems face challenges such as limited healthcare conversations, privacy concerns, weak emergency detection, and lack of advanced healthcare analytics.[1][2][3]
 
 To overcome these issues, the proposed LLM-Based Smart Healthcare Assistant combines LSTM Deep Learning models, Large Language Models, intelligent healthcare chatbots, healthcare analytics dashboards, and emergency healthcare alerts.
 
