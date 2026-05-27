@@ -32,11 +32,9 @@ Healthcare accessibility and intelligent medical assistance are major challenges
 
 This research paper presents a comparative study of three recent research papers related to AI-powered healthcare assistants and intelligent healthcare chatbot systems:
 
-From LLMs to Intelligent Healthcare Agents: A Software Engineering Approach
-
-Smart Health Assist: An Intelligent Medical Chatbot for Patient Support and Health Record Management
-
-Privacy-Preserving LLM-Based Chatbots for Hypertensive Patient Self-Management
+-From LLMs to Intelligent Healthcare Agents: A Software Engineering Approach
+-Smart Health Assist: An Intelligent Medical Chatbot for Patient Support and Health Record Management
+-Privacy-Preserving LLM-Based Chatbots for Hypertensive Patient Self-Management
 
 The methodologies, strengths, and limitations of these systems are analyzed in detail. Based on the identified research gaps, this paper proposes an improved AI-powered healthcare system called LLM-Based Smart Healthcare Assistant, which combines LSTM Deep Learning models, Large Language Models, intelligent chatbot systems, healthcare analytics dashboards, and automated alert generation to improve healthcare accessibility, disease prediction, patient engagement, and intelligent healthcare support.
 
