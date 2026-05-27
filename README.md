@@ -3,22 +3,20 @@
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" width="220"/>
 </p>
-# 🏥 LLM-Based Smart Healthcare Assistant
+# TITLE OF THE RESEARCH PAPER
 
-## Submitted by
-Student Name : Your Name
+## IEEE Style Research Paper
 
-USN / Roll Number : Your USN
+### Submitted by
 
-Department Name : MCA
+**Student Name 1**  
+USN / Roll Number  
+Department Name  
+Institution Name   
 
-Institution Name : Your Institution Name
+**Guide / Mentor:**  
+Faculty Name  
 
-Guide / Mentor
-
-Guide : Guide Name
-
-Mentor : Mentor Name
 
 ---
 
