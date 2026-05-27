@@ -7,7 +7,7 @@
 
 # LLM-Based Smart Healthcare Assistant
 
-### Submitted by
+## Submitted by
 
 **Student Name :** Ankitha N
 
