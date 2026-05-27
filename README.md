@@ -28,7 +28,7 @@
 
 # Abstract
 
-Healthcare accessibility and intelligent medical assistance are major challenges in modern healthcare systems. Traditional healthcare systems mainly depend on manual consultations and hospital visits for preliminary diagnosis and healthcare guidance, which can lead to delayed responses, overcrowding, and increased workload for healthcare professionals. Recent advancements in Artificial Intelligence (AI), Machine Learning (ML), Deep Learning, Natural Language Processing (NLP), and Large Language Models (LLMs) have enabled the development of intelligent healthcare systems capable of symptom-based disease prediction, conversational healthcare assistance, medical report analysis, and emergency alert generation.
+Healthcare accessibility and intelligent medical assistance are major challenges in modern healthcare systems. Traditional healthcare systems mainly depend on manual consultations and hospital visits for preliminary diagnosis and healthcare guidance, which can lead to delayed responses, overcrowding, and increased workload for healthcare professionals. Recent advancements in Artificial Intelligence (AI), Machine Learning (ML), Deep Learning, Natural Language Processing (NLP), and Large Language Models (LLMs) have enabled the development of intelligent healthcare systems capable of symptom-based disease prediction, conversational healthcare assistance, medical report analysis, and emergency alert generation.[1][2][3]
 
 This research paper presents a comparative study of three recent research papers related to AI-powered healthcare assistants and intelligent healthcare chatbot systems:
 
@@ -58,7 +58,7 @@ Large Language Models and NLP technologies have significantly improved healthcar
 
 Traditional healthcare systems mainly depend on manual consultations and hospital visits, which can become inefficient due to overcrowding, delayed healthcare support, and increased workload for doctors and healthcare professionals.
 
-Recent developments in AI-powered healthcare systems help improve healthcare accessibility, patient engagement, and intelligent healthcare assistance through automated healthcare support systems.
+Recent developments in AI-powered healthcare systems help improve healthcare accessibility, patient engagement, and intelligent healthcare assistance through automated healthcare support systems.[1][2][3]
 
 ---
 
@@ -66,7 +66,7 @@ Recent developments in AI-powered healthcare systems help improve healthcare acc
 
 Although existing healthcare chatbot systems provide useful healthcare assistance, they still face several limitations including:
 
-- Limited conversational intelligence
+- Limited conversational intelligence[1][2]
 - Generic healthcare responses
 - Inaccurate disease prediction
 - Lack of emergency healthcare alerts
