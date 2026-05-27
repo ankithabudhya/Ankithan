@@ -509,14 +509,17 @@ The proposed framework aims to improve healthcare accessibility, reduce manual h
 
 # 15. References
 
-[1] Dahal  
-From LLMs to Intelligent Healthcare Agents: A Software Engineering Approach (2025)
+[1] Dahal,  
+From LLMs to Intelligent Healthcare Agents: A Software Engineering Approach, 2025  
+🔗 Link: https://arxiv.org/
 
-[2] Tripathi et al.  
-Smart Health Assist: An Intelligent Medical Chatbot for Patient Support and Health Record Management (2025)
+[2] Tripathi et al.,  
+Smart Health Assist: An Intelligent Medical Chatbot for Patient Support and Health Record Management, 2025  
+🔗 Link: https://arxiv.org/
 
-[3] Montagna et al.  
-Privacy-Preserving LLM-Based Chatbots for Hypertensive Patient Self-Management (2025)
+[3] Montagna et al.,  
+Privacy-Preserving LLM-Based Chatbots for Hypertensive Patient Self-Management, 2025  
+🔗 Link: https://arxiv.org/
 
 ---
 
