@@ -246,6 +246,7 @@ Most existing legal AI systems focus mainly on document processing but fail to p
 * Personalized legal assistance
 * Real-time legal analytics
 * Automated compliance monitoring
+  
 These limitations reduce system reliability, legal workflow efficiency, decision-making support, and the overall effectiveness of AI-assisted legal document analysis.[1][2][3]
 
 ---
