@@ -351,39 +351,25 @@ Final Output Generation
 ## 7.3 Data Flow
 
 - The user uploads a legal document to the system.
-
 - The preprocessing module extracts and cleans the document text.
-
 - The NLP module performs tokenization and text analysis.
-
 - The clause detection module identifies important legal clauses.
-
 - The classification module categorizes the legal document.
-
 - The summarization module generates concise summaries.
-
 - The risk assessment module identifies potential legal risks.
-
 - The dashboard visualizes legal insights and analytics.
-
 - The final results are displayed to the user.
 
 ## 7.4 Algorithms Used
 
 - Natural Language Processing (NLP)
-
 - Named Entity Recognition (NER)
-
 - Text Classification
-
 - Large Language Models (LLMs)
-
 - Clause Detection Algorithms
-
 - Document Summarization Models
-
 - Risk Assessment Models
-
+---
 # 8. Implementation Details
 
 ## 8.1 Hardware Requirements
@@ -426,21 +412,21 @@ Final Output Generation
 - Large Language Models (LLMs)
 - Legal AI
 - Legal Document Analysis
-
-  ## 9. Experimental Setup
+---
+  # 9. Experimental Setup
 
 The system is trained and tested using legal datasets containing contracts, agreements, legal policies, compliance documents, and publicly available legal text repositories.[1][2][3]
 
 Training and testing are performed using NLP techniques and AI-powered document analysis models.
 
-### Datasets Used
+## Datasets Used
 
 - ContractNLI Dataset
 - CUAD (Contract Understanding Atticus Dataset)
 - Legal Case Reports Dataset
 - Public Legal Documents Dataset
-
-### Evaluation Metrics
+---
+## Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -448,10 +434,10 @@ Training and testing are performed using NLP techniques and AI-powered document 
 - F1-Score
 - Clause Extraction Accuracy
 - Summarization Quality
+---
+  # 10. Results and Analysis
 
-  ## 10. Results and Analysis
-
-### 10.1 Experimental Results
+## 10.1 Experimental Results
 
 | Metric | Existing System | Proposed System |
 |----------|----------|----------|
@@ -462,11 +448,11 @@ Training and testing are performed using NLP techniques and AI-powered document 
 | Clause Extraction Accuracy | 80% |    |
 | Summarization Quality | Moderate |    |
 
-### 10.2 Graphical Analysis
+## 10.2 Graphical Analysis
 
 The proposed AI-Based Legal Document Analyzer achieved improved performance in legal document summarization, clause extraction, and document classification compared to existing systems.
 
-### 10.3 Observations
+## 10.3 Observations
 
 - Improved clause extraction accuracy.
 - Faster legal document review.
@@ -474,8 +460,8 @@ The proposed AI-Based Legal Document Analyzer achieved improved performance in l
 - Reduced manual effort.
 - Enhanced legal decision support.
 - Improved summarization quality.
-
-  ## 11. Discussion
+---
+  # 11. Discussion
 
 The proposed system improves legal document analysis efficiency using AI-powered summarization, clause extraction, and intelligent legal assistance.
 
@@ -483,7 +469,7 @@ Challenges include handling highly complex legal language, maintaining contextua
 
 ---
 
-## 12. Limitations
+# 12. Limitations
 
 - May misinterpret highly complex legal clauses
 - Requires high-quality legal documents
@@ -492,7 +478,7 @@ Challenges include handling highly complex legal language, maintaining contextua
 
 ---
 
-## 13. Future Scope
+# 13. Future Scope
 
 - Multilingual legal document analysis
 - Explainable AI for legal reasoning
@@ -503,7 +489,7 @@ Challenges include handling highly complex legal language, maintaining contextua
 
 ---
 
-## 14. Conclusion
+# 14. Conclusion
 
 This paper presented a comparative study of three AI-based legal document analysis research papers and analyzed their strengths and limitations. Existing systems face challenges such as limited contextual understanding, poor clause extraction accuracy, and lack of intelligent legal reasoning.[1][2][3]
 
