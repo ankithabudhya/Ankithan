@@ -362,7 +362,7 @@ Final Output Generation
 - The risk assessment module identifies potential legal risks.
 - The dashboard visualizes legal insights and analytics.
 - The final results are displayed to the user.
-
+---
 ## 7.4 Algorithms Used
 
 - Natural Language Processing (NLP)
@@ -422,6 +422,7 @@ The system is trained and tested using legal datasets containing contracts, agre
 
 Training and testing are performed using NLP techniques and AI-powered document analysis models.
 
+---
 ## Datasets Used
 
 - ContractNLI Dataset
@@ -451,10 +452,12 @@ Training and testing are performed using NLP techniques and AI-powered document 
 | Clause Extraction Accuracy | 80% |    |
 | Summarization Quality | Moderate |    |
 
+---
 ## 10.2 Graphical Analysis
 
 The proposed AI-Based Legal Document Analyzer achieved improved performance in legal document summarization, clause extraction, and document classification compared to existing systems.
 
+---
 ## 10.3 Observations
 
 - Improved clause extraction accuracy.
