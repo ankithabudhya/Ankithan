@@ -349,7 +349,7 @@ Legal Analytics Dashboard
 AI Legal Assistant Interface
       ↓
 Final Output Generation
-
+```
 ---
 ## 7.3 Data Flow
 
