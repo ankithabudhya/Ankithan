@@ -295,17 +295,11 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
 ## 6.2 Key Features
 
 - Legal document summarization
-
 - Clause detection
-
 - Risk assessment
-
 - Legal analytics dashboard
-
 - AI-powered legal assistant
-
 - Document classification
-
 - Legal question answering
 
 ## 6.3 Advantages of Proposed System
@@ -321,25 +315,16 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
 
 ## 7.1 Workflow
 
-Upload Legal Document
-      ↓
-Document Preprocessing
-      ↓
-Text Extraction Module
-      ↓
-NLP Processing
-      ↓
-Clause Detection System
-      ↓
-Document Classification
-      ↓
-LLM-Based Summarization
-      ↓
-Risk Assessment Module
-      ↓
-Legal Analytics Dashboard
-      ↓
-AI Legal Assistant Output
+1.Upload Legal Document
+2.Document Preprocessing
+3.Text Extraction Module
+4.NLP Processing
+5.Clause Detection System
+6.Document Classification
+7.LLM-Based Summarization
+8.Risk Assessment Module
+9.Legal Analytics Dashboard
+10.AI Legal Assistant Output
 
 ## 7.2 System Architecture
 
