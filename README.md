@@ -314,17 +314,17 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
  # 7. Methodology
 
 ## 7.1 Workflow
-
-  1.Upload Legal Document
-  2.Document Preprocessing
-  3.Text Extraction Module
-  4.NLP Processing
-  5.Clause Detection System
-  6.Document Classification
-  7.LLM-Based Summarization
-  8.Risk Assessment Module
-  9.Legal Analytics Dashboard
- 10.AI Legal Assistant Output
+  1. Upload Legal Document
+  2. Document Preprocessing
+  3. Text Extraction Module
+  4. NLP Processing
+  5. Clause Detection System
+  6. Document Classification
+  7. LLM-Based Summarization
+  8. Risk Assessment Module
+  9. Legal Analytics Dashboard
+ 10. AI Legal Assistant Output
+  ---
 
 ## 7.2 System Architecture
 
