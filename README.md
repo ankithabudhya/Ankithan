@@ -25,7 +25,7 @@
 
 ---
 
-## Abstract
+# Abstract
 
 Legal document review and analysis are major challenges in modern legal systems. Traditional legal processes mainly depend on manual examination of contracts, agreements, petitions, policies, compliance documents, and other legal records, which can lead to delayed reviews, human errors, and increased workload for legal professionals. Recent advancements in Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), Large Language Models (LLMs), and Legal AI have enabled the development of intelligent legal systems capable of document summarization, clause extraction, risk assessment, legal classification, and automated legal assistance.[1][2][3]
 
