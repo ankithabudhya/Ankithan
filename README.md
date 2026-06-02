@@ -327,9 +327,10 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
   ---
 
 ## 7.2 System Architecture
-User Input
+```text
+ User Input
       ↓
-Document Upload Module
+ Document Upload Module
       ↓
 Text Extraction Engine
       ↓
