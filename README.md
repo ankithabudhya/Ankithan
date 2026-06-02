@@ -327,8 +327,7 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
   ---
 
 ## 7.2 System Architecture
-
-User Input
+ User Input
       ↓
 Document Upload Module
       ↓
@@ -340,14 +339,17 @@ Clause Detection Module
       ↓
 Document Classification Module
       ↓
-Summarization Engine
+LLM-Based Summarization Engine
       ↓
-Risk Analysis Module
+Risk Assessment Module
       ↓
 Legal Analytics Dashboard
       ↓
+AI Legal Assistant Interface
+      ↓
 Final Output Generation
 
+---
 ## 7.3 Data Flow
 
 - The user uploads a legal document to the system.
