@@ -5,7 +5,7 @@
 </p>
 
 
-# AI Based Legal Document Analyzer
+# AI-Based Legal Document Analyzer
 
 ## Submitted by
 
