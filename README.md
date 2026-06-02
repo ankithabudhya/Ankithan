@@ -315,16 +315,16 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
 
 ## 7.1 Workflow
 
-1.Upload Legal Document
-2.Document Preprocessing
-3.Text Extraction Module
-4.NLP Processing
-5.Clause Detection System
-6.Document Classification
-7.LLM-Based Summarization
-8.Risk Assessment Module
-9.Legal Analytics Dashboard
-10.AI Legal Assistant Output
+  1.Upload Legal Document
+  2.Document Preprocessing
+  3.Text Extraction Module
+  4.NLP Processing
+  5.Clause Detection System
+  6.Document Classification
+  7.LLM-Based Summarization
+  8.Risk Assessment Module
+  9.Legal Analytics Dashboard
+ 10.AI Legal Assistant Output
 
 ## 7.2 System Architecture
 
@@ -350,23 +350,23 @@ Final Output Generation
 
 ## 7.3 Data Flow
 
-The user uploads a legal document to the system.
+- The user uploads a legal document to the system.
 
-The preprocessing module extracts and cleans the document text.
+- The preprocessing module extracts and cleans the document text.
 
-The NLP module performs tokenization and text analysis.
+- The NLP module performs tokenization and text analysis.
 
-The clause detection module identifies important legal clauses.
+- The clause detection module identifies important legal clauses.
 
-The classification module categorizes the legal document.
+- The classification module categorizes the legal document.
 
-The summarization module generates concise summaries.
+- The summarization module generates concise summaries.
 
-The risk assessment module identifies potential legal risks.
+- The risk assessment module identifies potential legal risks.
 
-The dashboard visualizes legal insights and analytics.
+- The dashboard visualizes legal insights and analytics.
 
-The final results are displayed to the user.
+- The final results are displayed to the user.
 
 ## 7.4 Algorithms Used
 
