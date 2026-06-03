@@ -41,7 +41,7 @@ The methodologies, strengths, and limitations of these systems are analyzed in d
 
 # Keywords
 
-AI-ML, NLP, Large Language Models, Legal AI, Legal Document Analysis, Clause Detection, Document Summarization, Risk Assessment, Intelligent Legal Assistant, Legal Analytics
+AI-ML, NLP, Large Language Models, Legal AI, Legal Document Analysis, Clause Detection, Document Summarization, Risk Scoring, Intelligent Legal Assistant, Legal Analytics
 
 ---
 
@@ -55,7 +55,7 @@ Traditional legal document review depends heavily on manual reading and analysis
 
 Recent developments in Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), and Large Language Models (LLMs) have significantly improved automated legal document analysis systems.[1][2][3]
 
-AI-powered systems can now summarize legal documents, detect important clauses, identify risks, classify legal content, and provide intelligent legal assistance in real time.
+AI-powered systems can now summarize legal documents, detect important clauses, identify risks,assign risk scores, classify legal content, and provide intelligent legal assistance in real time.
 
 ---
 
@@ -66,7 +66,7 @@ Although existing legal document analysis systems provide useful automation, the
 * Limited legal context understanding [1][2]
 * Inaccurate clause classification [2]
 * Poor explainability of legal insights [1][3]
-* Limited risk assessment support [2]
+* Limited risk scoring capability [2]
 * Privacy and security concerns [3]
 * Lack of personalized legal assistance [1][2]
 
@@ -76,7 +76,7 @@ These limitations reduce the efficiency and reliability of current legal AI syst
 
 ## 1.3 Need for the Study
 
-There is a growing need for intelligent legal systems capable of providing accurate legal document summarization, clause extraction, risk detection, legal analytics, and automated legal assistance.
+There is a growing need for intelligent legal systems capable of providing accurate legal document summarization, clause extraction, risk detection,risk scoring, legal analytics, and automated legal assistance.
 
 Existing systems mainly focus on legal document classification and fail to provide advanced legal analytics, explainable legal insights, and intelligent legal assistance.[1][2][3]
 
@@ -91,13 +91,14 @@ This research aims to address these limitations by proposing an intelligent AI-p
 * To design an intelligent legal document analyzer using AI and NLP
 * To improve legal clause detection accuracy
 * To provide automated legal document summarization
+* To introduce risk scoring for legal documents to quantify risk levels (Low / Medium / High)
 * To improve legal workflow efficiency and decision support
 
 ---
 
 ## 1.5 Scope of the Work
 
-The proposed system focuses on legal document summarization, clause detection, legal risk assessment, legal analytics dashboards, and intelligent legal assistance using AI and NLP techniques.
+The proposed system focuses on legal document summarization, clause detection, legal risk assessment,risk scoring, legal analytics dashboards, and intelligent legal assistance using AI and NLP techniques.
 
 The system supports law firms, legal departments, compliance teams, contract management systems, and legal research applications.[1][2]
 
@@ -394,7 +395,6 @@ Final Output Generation
 | Python | 3.10+ |
 | Streamlit | Latest |
 | VS Code | Latest |
-| Transformers | Latest |
 | spaCy | Latest |
 | PyPDF2 | Latest |
 | Pandas | Latest |
