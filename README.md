@@ -375,6 +375,7 @@ Final Output Generation
 - Clause Detection Algorithms
 - Document Summarization Models
 - Risk Assessment Models
+- Rule-Based Legal Risk Assessment Algorithm
 ---
 # 8. Implementation Details
 
