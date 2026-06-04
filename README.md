@@ -66,7 +66,7 @@ Although existing legal document analysis systems provide useful automation, the
 * Limited legal context understanding [1][2]
 * Inaccurate clause classification [2]
 * Poor explainability of legal insights [1][3]
-* Limited risk scoring capability [2]
+* Limited legal risk assessment capability [2]
 * Privacy and security concerns [3]
 * Lack of personalized legal assistance [1][2]
 
