@@ -211,14 +211,16 @@ This paper presents an AI-powered legal assistant that helps users understand le
 
 # 3. Comparative Analysis
 
-| Feature          | Paper 1         | Paper 2            | Paper 3          |
-| ---------------- | --------------- | ------------------ | ---------------- |
-| Core Technology  | NLP + CNN/RNN   | Transformer Models | AI Chatbot       |
-| Main Focus       | Data Extraction | Clause Analysis    | Legal Assistance |
-| Summarization    | Limited         | Moderate           | Moderate         |
-| Clause Detection | Moderate        | Advanced           | Basic            |
-| Risk Assessment  | Limited         | Advanced           | Basic            |
-| Privacy Support  | Medium          | Medium             | Medium           |
+| Feature | Paper 1 | Paper 2 | Paper 3 |
+|----------|----------|----------|----------|
+| Core Technology | NLP + Deep Learning + KBP | Transformer Models | AI Chatbot |
+| Main Focus | Information Extraction | Clause Analysis | Legal Assistance |
+| Summarization | Moderate | Moderate | Moderate |
+| Clause Detection | Basic | Advanced | Basic |
+| Risk Assessment | Limited | Advanced | Basic |
+| Legal Search | Advanced | Moderate | Limited |
+| Knowledge Representation | Advanced | Limited | Limited |
+| Privacy Support | Medium | Medium | Medium |
 
 ---
 
@@ -226,15 +228,15 @@ This paper presents an AI-powered legal assistant that helps users understand le
 
 ## Gap 1
 
-Existing legal AI systems provide limited legal document understanding and contextual reasoning capabilities.[1][2]
+Existing legal AI systems provide limited legal document understanding and contextual reasoning capabilities, making it difficult to accurately analyze complex legal documents.[1][2]
 
 ## Gap 2
 
-Most legal document analyzers lack explainable legal insights and advanced legal analytics support.[1][2]
+Most legal document analyzers lack explainable legal insights and advanced legal analytics support for effective decision-making.[1][2]
 
 ## Gap 3
 
-Current systems provide limited legal risk assessment and personalized legal assistance.[2][3]
+Current systems provide limited legal risk assessment and personalized legal assistance, reducing their effectiveness in supporting users and legal professionals.[2][3]
 
 ---
 
