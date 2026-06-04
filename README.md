@@ -519,9 +519,10 @@ The proposed framework aims to improve legal document understanding, reduce manu
 ---
 # 15. References
 
-[1] Dr. Vijay Kumar Joshi, Dr. R Naveenkumar, Rubi Sarkar, Nitin Kumar,
-Development of an AI-Based Model for Automated Data Extraction and Classification in Legal Documents, Journal of Informatics Education and Research, Vol. 4, Issue 3, 2024.
-🔗 Link: https://jier.org
+[1] Ashwini V. Zadgaonkar, Avinash J. Agrawal,
+An Overview of Information Extraction Techniques for Legal Document Analysis and Processing,
+International Journal of Electrical and Computer Engineering (IJECE), Vol. 11, No. 6, 2021.
+🔗 Link: http://ijece.iaescore.com
 
 [2] Rummana Firdaus, Sunidhi S Babu, Sneha Nayak M S, Manvitha P,
 An AI-Based Smart Legal Assistant for Automated Legal Document Analysis, IRE Journals, Volume 9, Issue 6, 2025.
