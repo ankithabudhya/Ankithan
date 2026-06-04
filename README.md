@@ -114,14 +114,15 @@ This section analyzes three important research papers related to AI-assisted leg
 
 ### Paper Details
 
-| Attribute         | Details                                                                                     |
-|-------------------|-------------------------------------------—-------------------------------------------------|
-| Title             | An Overview of Information Extraction Techniques for Legal Document Analysis and Processing |
-| Authors           | Ashwini V. Zadgaonkar, Avinash J. Agrawal                                                   |
-| Year              | 2021                                                                                        |
-| Methodology       | Legal Information Extraction and Processing                                                 |
-| Technologies Used | NLP, Deep Learning, Knowledge Base Population (KBP)                                         |
-| Results           | Automated legal information extraction and legal document analysis                          |
+          
+| Attribute | Details |
+|------------|----------|
+| Title | An Overview of Information Extraction Techniques for Legal Document Analysis and Processing |
+| Authors | Ashwini V. Zadgaonkar, Avinash J. Agrawal |
+| Year | 2021 |
+| Methodology | Legal Information Extraction and Processing |
+| Technologies Used | NLP, Deep Learning, Knowledge Base Population (KBP) |
+| Results | Automated legal information extraction and legal document analysis |                
 
 ### Summary
 
