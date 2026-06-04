@@ -114,31 +114,33 @@ This section analyzes three important research papers related to AI-assisted leg
 
 ### Paper Details
 
-| Attribute         | Details                                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------------------- |
-| Title             | Development of an AI-Based Model for Automated Data Extraction and Classification in Legal Documents |
-| Authors           | Dr. Vijay Kumar Joshi, Dr. R Naveenkumar, Rubi Sarkar, Nitin Kumar                                   |
-| Year              | 2024                                                                                                 |
-| Methodology       | Legal Data Extraction and Classification                                                             |
-| Technologies Used | NLP, ML, CNN, RNN                                                                                    |
-| Results           | Automated legal information extraction                                                               |
+| Attribute         | Details                                                                                     |
+|-------------------|-------------------------------------------—-------------------------------------------------|
+| Title             | An Overview of Information Extraction Techniques for Legal Document Analysis and Processing |
+| Authors           | Ashwini V. Zadgaonkar, Avinash J. Agrawal                                                   |
+| Year              | 2021                                                                                        |
+| Methodology       | Legal Information Extraction and Processing                                                 |
+| Technologies Used | NLP, Deep Learning, Knowledge Base Population (KBP)                                         |
+| Results           | Automated legal information extraction and legal document analysis                          |
 
 ### Summary
 
-This paper presents an AI-based model for extracting and classifying legal information from legal documents. The system uses NLP, Machine Learning, CNN, and RNN techniques to improve legal document processing and reduce manual effort.[1]
+This paper explores AI techniques for automatic legal document analysis. It uses NLP, Deep Learning, and Knowledge Base Population to extract legal information, improve legal search, and reduce manual effort in processing legal documents.[1]
 
 ### Advantages
 
-* Automated legal data extraction
-* Improved classification accuracy
+* Automated legal information extraction
 * Reduced manual effort
-* Faster document processing
+* Faster legal document processing
+* Improved legal search and retrieval
+* Supports legal document summarization
 
 ### Limitations
 
-* Requires domain-specific training data
-* Limited explainability
-* Performance depends on document quality
+* Requires large legal datasets
+* Legal language is complex and ambiguous
+* Deep learning models require training data
+* Knowledge base creation is time-consuming
 
 ---
 
