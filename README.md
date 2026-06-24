@@ -301,12 +301,12 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
 
 ## 6.2 Key Features
 
-- Legal document summarization
-- Clause detection
+- Legal document summarization(LLM-based — Groq LLaMA 3)
+- Clause detection(ML-based — fine-tuned LegalBERT classifier)
 - Risk assessment
-- Risk scoring(Low/Medium/High)
+- Risk scoring(Low/Medium/High)(rule-based deterministic scoring)
 - Legal analytics dashboard
-- AI-powered legal assistant
+- AI-powered legal assistant(LLM-based Q&A — Groq LLaMA 3)
 - Document classification
 - Legal question answering
 
@@ -338,23 +338,23 @@ The system accepts legal documents, extracts text, analyzes clauses, generates s
 ```text
  User Input
       ↓
- Document Upload Module
+ Document Upload Module(React.js Frontend)
       ↓
 Text Extraction Engine
       ↓
 NLP Processing Layer
       ↓
-Clause Detection Module
+Clause Detection Module(Fine-tuned LegalBERT Classifier)
       ↓
 Document Classification Module
       ↓
-LLM-Based Summarization Engine
+LLM-Based Summarization Engine(Groq LLaMA 3)
       ↓
-Risk Assessment & Risk Scoring Module
+Risk Assessment & Risk Scoring Module(Rule-Based Engine)
       ↓
-Legal Analytics Dashboard
+Legal Analytics Dashboard(FastAPI + Supabase PostgreSQL)
       ↓
-AI Legal Assistant Interface
+AI Legal Assistant Interface(Groq LLaMA 3 Q&A)
       ↓
 Final Output Generation
 ```
@@ -375,12 +375,13 @@ Final Output Generation
 
 - Natural Language Processing (NLP)
 - Named Entity Recognition (NER)
-- Text Classification
+- Text Classification-Fine-tuned LegalBERT (nlpaueb/legal-bert-base-uncased)
+- Groq LLaMA 3 (llama-3.3-70b-versatile)
+- Clause Detection Algorithm — LegalBERT Classifier trained on CUAD
+- Document Summarization Model — Groq LLaMA 3 (prompt-based)
+- Risk Assessment Model — Rule-based keyword/clause risk weighting
+- Rule-Based Legal Risk Assessment Algorithm — deterministic get_risk_level() thresholding (0–49 Low, 50–79 Medium, 80–100 High)
 - Large Language Models (LLMs)
-- Clause Detection Algorithms
-- Document Summarization Models
-- Risk Assessment Models
-- Rule-Based Legal Risk Assessment Algorithm
 ---
 # 8. Implementation Details
 
@@ -391,8 +392,8 @@ Final Output Generation
 | Processor | Intel i5 or Higher |
 | RAM | 8 GB or Higher |
 | Storage | 20 GB Free Space |
-| GPU | Optional (Recommended) |
-| Internet | Required for API Access |
+| GPU | Used for model training (T4 GPU via Google Colab) |
+| Internet | Required for API Access (Groq, Supabase) |
 
 ---
 
@@ -401,23 +402,27 @@ Final Output Generation
 | Software | Version |
 |-----------|----------|
 | Python | 3.10+ |
-| Streamlit | Latest |
-| VS Code | Latest |
-| spaCy | Latest |
-| PyPDF2 | Latest |
-| Pandas | Latest |
-| NumPy | Latest |
+| FastAPI| Latest |
+| React.js | 18+ |
+| Node.js | Latest |
+| VS code | Latest |
+| Supabase (PostgreSQL) | Latest |
+| Groq API (LLaMA 3) | llama-3.3-70b-versatile |
+| PyTorch / Transformers | Latest |
 
 ---
 ## 8.3 Tools and Technologies
 
 - Python
-- Streamlit
-- spaCy
-- NLTK
-- Pandas
-- NumPy
-- PyPDF2
+- FastAPI
+- React.js
+- Supabase (PostgreSQL Database)
+- SQLAlchemy (ORM)
+- Groq LLaMA 3 (llama-3.3-70b-versatile) — LLM-based summarization, Q&A, key information extraction
+- Fine-tuned LegalBERT (nlpaueb/legal-bert-base-uncased) — ML-based clause classification
+- CUAD Dataset (Contract Understanding Atticus Dataset) — model training data
+- JWT Authentication with SHA256 password hashing
+- PyTorch / HuggingFace Transformers
 - Machine Learning
 - Natural Language Processing (NLP)
 - Large Language Models (LLMs)
