@@ -1,547 +1,486 @@
-<p align="center">
-  <img src="https://www.erafoundationindia.org/images/logo.svg" width="220"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" width="220"/>
-</p>
+<div align="center">
 
+<img src="https://drait.edu.in/assets/images/full_logo-wide.png" height="80" style="background:white; padding:8px; margin:0 16px;" />
+<img src="https://www.erafoundationindia.org/images/logo.svg" height="80" style="background:white; padding:8px; margin:0 16px;" />
+<img src="https://comedkares.org/wp-content/uploads/2023/04/Comedkares-Logo-EPS.png" height="80" style="background:white; padding:8px; margin:0 16px;" />
 
 # AI-Based Legal Document Analyzer
 
-## Submitted by
 
-**Student Name :** Ankitha N
+*Ankitha N*  
+*MCA*  
+*1DA24MC007*
 
-**USN / Roll Number :** 1DA24MC007
+</div>
 
-**Department Name :**  MCA
+## Abstract
 
-**Institution Name :** Dr. Ambedkar Institute of Technology
+Legal documents contain large volumes of complex information including clauses, agreements, obligations, conditions, and legal terminology. Reviewing such documents manually requires significant time, legal expertise, and careful analysis. Users without legal background often face difficulties understanding important terms, identifying risks, and extracting meaningful information from lengthy documents.
 
----
+This project presents an **AI-Based Legal Document Analyzer** that uses **Deep Learning, Natural Language Processing (NLP), and Large Language Models (LLMs)** to automatically analyze legal documents. The system processes uploaded legal documents, extracts important clauses, generates simplified summaries, and provides meaningful legal insights.
 
-## Guide / Mentor
+The proposed system combines transformer-based legal language models such as **LegalBERT** with LLM-based analysis techniques to improve document understanding. The application acts as an intelligent legal assistant that helps users review agreements, contracts, and legal documents efficiently.
 
-**Guide :** Harsha T R  
+The system is implemented using a modern full-stack architecture with **React.js** for the frontend, **FastAPI** for backend services, and **Supabase PostgreSQL** for database management. AI processing is integrated using LLM APIs for generating summaries and extracting legal information.
 
----
-
-# Abstract
-
-Legal document review and analysis are major challenges in modern legal systems. Traditional legal processes mainly depend on manual examination of contracts, agreements, petitions, policies, compliance documents, and other legal records, which can lead to delayed reviews, human errors, and increased workload for legal professionals. Recent advancements in Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), Large Language Models (LLMs), and Legal AI have enabled the development of intelligent legal systems capable of document summarization, clause extraction, risk assessment,risk scoring, legal classification, and automated legal assistance.[1][2][3]
-
-This research paper presents a comparative study of three recent research papers related to AI-powered legal document analysis systems:
-
-* Development of an AI-Based Model for Automated Data Extraction and Classification in Legal Documents
-* An AI-Based Smart Legal Assistant for Automated Legal Document Analysis
-* AI-Powered Legal Documentation Assistant
-
-The methodologies, strengths, and limitations of these systems are analyzed in detail. Based on the identified research gaps, this paper proposes an improved AI-powered legal system called **AI-Based Legal Document Analyzer**, which combines Large Language Models (LLMs), NLP techniques, legal clause detection, document summarization, risk analysis, risk scoring ,and intelligent legal assistance to improve legal document understanding, legal workflow efficiency, and decision-making support.
+The developed solution reduces manual document review effort, improves accessibility of legal information, and demonstrates the effectiveness of Artificial Intelligence in the legal domain.
 
 ---
 
-# Keywords
+## Keywords
 
-AI-ML, NLP, Large Language Models, Legal AI, Legal Document Analysis, Clause Detection, Document Summarization,Risk Assessment, Risk Scoring, Intelligent Legal Assistant, Legal Analytics
+Artificial Intelligence (AI), Legal Document Analysis, Natural Language Processing (NLP), Large Language Model (LLM), Deep Learning, LegalBERT, Transformer Architecture, Clause Detection, Document Summarization, Legal Assistant.
 
 ---
 
 # 1. Introduction
 
-## 1.1 Background
+Legal documents such as rental agreements, contracts, policies, and legal notices contain important information related to rights, responsibilities, obligations, and conditions between parties. These documents are usually written using complex legal language, making them difficult for normal users to understand.
 
-Legal document analysis is an important part of legal services, corporate compliance, and contract management systems. Legal professionals regularly deal with contracts, agreements, court petitions, compliance documents, privacy policies, and regulatory records that require careful review and interpretation.
+Traditional legal document analysis depends heavily on manual review performed by legal professionals. Although experts can accurately interpret documents, the process requires considerable time and effort, especially when dealing with large numbers of documents.
 
-Traditional legal document review depends heavily on manual reading and analysis, which becomes time-consuming and error-prone when handling large volumes of documents.
+Recent developments in Artificial Intelligence have introduced powerful methods for understanding and processing human language. Natural Language Processing enables computers to analyze text, extract meaningful information, and generate human-like responses. Deep Learning models, especially Transformer-based architectures, have improved the ability of machines to understand contextual relationships in text.
 
-Recent developments in Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), and Large Language Models (LLMs) have significantly improved automated legal document analysis systems.[1][2][3]
+Large Language Models such as GPT-based models and LLaMA-based models have demonstrated strong capabilities in document summarization, question answering, and knowledge extraction. These models can process large text inputs and generate understandable responses.
 
-AI-powered systems can now summarize legal documents, detect important clauses, identify risks,assign risk scores, classify legal content, and provide intelligent legal assistance in real time.
+In the legal domain, specialized language models such as LegalBERT have been developed by training transformer architectures on legal datasets. These models improve performance in legal classification, clause detection, and information retrieval tasks.
 
----
-
-## 1.2 Problem Overview
-
-Although existing legal document analysis systems provide useful automation, they still face several limitations including:
-
-* Limited legal context understanding [1][2]
-* Inaccurate clause classification [2]
-* Poor explainability of legal insights [1][3]
-* Limited legal risk assessment capability [2]
-* Privacy and security concerns [3]
-* Lack of personalized legal assistance [1][2]
-
-These limitations reduce the efficiency and reliability of current legal AI systems.
-
----
-
-## 1.3 Need for the Study
-
-There is a growing need for intelligent legal systems capable of providing accurate legal document summarization, clause extraction, risk detection,risk scoring, legal analytics, and automated legal assistance.
-
-Existing systems mainly focus on legal document classification and fail to provide advanced legal analytics, explainable legal insights, and intelligent legal assistance.[1][2][3]
-
-This research aims to address these limitations by proposing an intelligent AI-powered legal document analyzer.
-
----
-
-## 1.4 Objectives
-
-* To study existing AI-based legal document analysis systems
-* To identify limitations in current legal AI approaches
-* To design an intelligent legal document analyzer using AI and NLP
-* To improve legal clause detection accuracy
-* To provide automated legal document summarization
-* To introduce risk scoring for legal documents to quantify risk levels (Low / Medium / High)
-* To improve legal workflow efficiency and decision support
-
----
-
-## 1.5 Scope of the Work
-
-The proposed system focuses on legal document summarization, clause detection, legal risk assessment,risk scoring, legal analytics dashboards, and intelligent legal assistance using AI and NLP techniques.
-
-The system supports law firms, legal departments, compliance teams, contract management systems, and legal research applications.[1][2]
+This project proposes an **AI-Based Legal Document Analyzer** that combines Legal NLP techniques and LLM-based analysis to automatically process legal documents. The system identifies important clauses, generates summaries, and provides simplified explanations to improve legal document accessibility.
 
 ---
 
 # 2. Literature Review
 
-This section analyzes three important research papers related to AI-assisted legal document analysis systems.
+The application of Artificial Intelligence in the legal domain has grown rapidly with advancements in Natural Language Processing and Deep Learning. Several research works have explored automated legal document understanding, contract analysis, summarization, and information extraction.
+
+Early research in NLP focused on machine learning approaches for text classification and information extraction. However, traditional approaches struggled with understanding complex legal language due to limited contextual awareness.
+
+The introduction of Transformer-based models significantly improved language understanding capabilities. Vaswani et al. proposed the Transformer architecture using self-attention mechanisms, which became the foundation for modern Large Language Models. The architecture allows models to capture relationships between words effectively and process long text sequences.
+
+Devlin et al. introduced BERT (Bidirectional Encoder Representations from Transformers), which improved natural language understanding by learning contextual representations from both directions. BERT became widely used for various NLP tasks including classification, extraction, and question answering.
+
+LEGAL-BERT was developed specifically for the legal domain by training transformer models on legal text collections. The model improved legal text understanding by learning domain-specific terminology and document structures. It has been applied for legal classification, contract analysis, and clause identification.
+
+Research on contract analysis introduced datasets such as CUAD (Contract Understanding Atticus Dataset), which contains expert-annotated contract clauses. Such datasets support the development of AI systems capable of identifying important legal sections automatically.
+
+Recent studies have focused on AI-powered legal assistants that combine NLP and LLM technologies. These systems provide document summarization, question answering, clause extraction, and legal information retrieval.
+
+Retrieval-Augmented Generation (RAG) techniques further improve LLM performance by combining language generation with external knowledge retrieval. This allows AI systems to generate more accurate responses based on document content.
+
+The proposed system builds upon these research works by integrating LegalBERT, LLM-based analysis, and NLP techniques into a complete legal document analysis platform.
 
 ---
 
-## 2.1 Research Paper 1
+# 3. Problem Statement
 
-### Paper Details
+Legal documents contain complex structures and specialized terminology that make manual analysis difficult for common users. Reviewing agreements and contracts requires significant time and legal knowledge.
 
-          
-| Attribute | Details |
-|------------|----------|
-| Title | An Overview of Information Extraction Techniques for Legal Document Analysis and Processing |
-| Authors | Ashwini V. Zadgaonkar, Avinash J. Agrawal |
-| Year | 2021 |
-| Methodology | Legal Information Extraction and Processing |
-| Technologies Used | NLP, Deep Learning, Knowledge Base Population (KBP) |
-| Results | Automated legal information extraction and legal document analysis |                
+Existing document processing solutions mainly focus on storing and searching documents but lack intelligent understanding of legal content. Users often face challenges such as:
 
-### Summary
+**i. Complex Legal Language**
 
-This paper explores AI techniques for automatic legal document analysis. It uses NLP, Deep Learning, and Knowledge Base Population to extract legal information, improve legal search, and reduce manual effort in processing legal documents.[1]
+Legal agreements contain technical terms and lengthy clauses that are difficult for non-experts to interpret.
 
-### Advantages
+**ii. Manual Clause Identification**
 
-* Automated legal information extraction
-* Reduced manual effort
-* Faster legal document processing
-* Improved legal search and retrieval
-* Supports legal document summarization
+Important sections such as termination clauses, payment conditions, obligations, and dispute resolution terms must be manually identified.
 
-### Limitations
+**iii. Lack of Automated Summarization**
 
-* Requires large legal datasets
-* Legal language is complex and ambiguous
-* Deep learning models require training data
-* Knowledge base creation is time-consuming
+Users need simplified summaries instead of reading entire legal documents.
+
+**iv. Limited AI Assistance**
+
+Many existing tools do not provide interactive AI-based explanations or contextual understanding.
+
+Therefore, an AI-based legal document analyzer using Deep Learning, NLP, and LLM technologies is required to automatically extract legal information, detect clauses, and generate simplified document summaries.
 
 ---
 
-## 2.2 Research Paper 2
+# 4. Objectives
 
-### Paper Details
+The main objectives of this research are:
 
-| Attribute         | Details                                                                 |
-| ----------------- | ----------------------------------------------------------------------- |
-| Title             | An AI-Based Smart Legal Assistant for Automated Legal Document Analysis |
-| Authors           | Rummana Firdaus, Sunidhi S Babu, Sneha Nayak M S, Manvitha P            |
-| Year              | 2025                                                                    |
-| Methodology       | Legal Clause Analysis                                                   |
-| Technologies Used | Transformer Models, FastAPI, React                                      |
-| Results           | Automated legal document review                                         |
+1. To develop an AI-based system for automated legal document analysis.
 
-### Summary
+2. To process legal documents using Natural Language Processing techniques.
 
-This paper introduces a Smart Legal Assistant capable of clause extraction, semantic classification, and legal risk assessment using transformer-based NLP models.[2]
+3. To detect important legal clauses automatically.
 
-### Advantages
+4. To generate simplified summaries of legal documents using Large Language Models.
 
-* Clause classification
-* Legal risk detection
-* Automated legal review
-* User-friendly interface
+5. To integrate LegalBERT-based legal text understanding.
 
-### Limitations
+6. To develop an AI legal assistant for document interpretation.
 
-* Computationally expensive
-* Requires large datasets
-* Response latency issues
+7. To store and manage document analysis results securely.
+
+8. To evaluate the effectiveness and accuracy of the developed system.
+
+---
+# 5. Methodology
+
+The proposed AI-Based Legal Document Analyzer follows a structured workflow combining document processing, Natural Language Processing, Deep Learning models, and Large Language Models.
+
+The complete methodology consists of the following stages:
 
 ---
 
-## 2.3 Research Paper 3
+## 5.1 Document Upload
 
-### Paper Details
+The user uploads a legal document in PDF format through the web application interface.
 
-| Attribute         | Details                                    |
-| ----------------- | ------------------------------------------ |
-| Title             | AI-Powered Legal Documentation Assistant   |
-| Authors           | P. Vimala Imogen, J. Sreenidhi, V. Nivedha |
-| Year              | 2024                                       |
-| Methodology       | Legal AI Assistant                         |
-| Technologies Used | NLP, AI Chatbot                            |
-| Results           | Intelligent legal assistance               |
+Supported documents include:
 
-### Summary
+- Rental Agreements
+- Contracts
+- Legal Notices
+- Policies
+- Business Agreements
 
-This paper presents an AI-powered legal assistant that helps users understand legal rights, generate legal documents, and obtain legal guidance through intelligent chatbot interactions.[3]
-
-### Advantages
-
-* AI-powered legal guidance
-* Legal document drafting support
-* User-friendly interaction
-* Improved accessibility
-
-### Limitations
-
-* Limited legal reasoning
-* Privacy concerns
-* Dependency on predefined legal templates
+The uploaded file is securely transferred to the backend system for further processing.
 
 ---
 
-# 3. Comparative Analysis
+## 5.2 Document Text Extraction
 
-| Feature | Paper 1 | Paper 2 | Paper 3 |
-|----------|----------|----------|----------|
-| Core Technology | NLP + Deep Learning + KBP | Transformer Models | AI Chatbot |
-| Main Focus | Information Extraction | Clause Analysis | Legal Assistance |
-| Summarization | Moderate | Moderate | Moderate |
-| Clause Detection | Basic | Advanced | Basic |
-| Risk Assessment | Limited | Advanced | Basic |
-| Legal Search | Advanced | Moderate | Limited |
-| Knowledge Representation | Advanced | Limited | Limited |
-| Privacy Support | Medium | Medium | Medium |
+The uploaded PDF document is processed to extract readable text content.
 
----
+The extraction process includes:
 
-# 4. Research Gaps Identified
+- PDF file validation
+- Text conversion
+- Removal of unnecessary formatting
+- Preparing document text for NLP processing
 
-## Gap 1
-
-Existing legal AI systems provide limited legal document understanding and contextual reasoning capabilities, making it difficult to accurately analyze complex legal documents.[1][2]
-
-## Gap 2
-
-Most legal document analyzers lack explainable legal insights and advanced legal analytics support for effective decision-making.[1][2]
-
-## Gap 3
-
-Current systems provide limited legal risk assessment and personalized legal assistance, reducing their effectiveness in supporting users and legal professionals.[2][3]
+The extracted content is converted into a machine-readable format.
 
 ---
 
-# Enhancement Suggestion: Intelligent Legal Analytics Module
+## 5.3 Text Preprocessing
 
-## Problem in Existing Systems
+Before applying AI models, the extracted legal text undergoes preprocessing.
 
-Most existing legal AI systems focus mainly on document processing but fail to provide:
+The preprocessing steps include:
 
-* Intelligent legal summarization
-* Advanced risk analysis and risk scoring
-* Explainable legal insights
-* Personalized legal assistance
-* Real-time legal analytics
-* Automated compliance monitoring
-  
-These limitations reduce system reliability, legal workflow efficiency, decision-making support, and the overall effectiveness of AI-assisted legal document analysis.[1][2][3]
+- Sentence segmentation
+- Tokenization
+- Removal of unwanted symbols
+- Text normalization
+- Identification of important legal sections
 
----
-
-## Proposed Enhancement
-
-The proposed system introduces an Intelligent Legal Analytics Module that provides:
-
-* Legal document summarization
-* Clause detection
-* Risk assessment
-* Risk scoring(Low/Medium/High)
-* Legal chatbot assistance
-* Compliance monitoring
-* Legal analytics dashboard
+This improves the quality of input given to Deep Learning models.
 
 ---
 
-## Benefits
+## 5.4 Legal Language Understanding Using Deep Learning
 
-* Improves legal workflow efficiency
-* Reduces manual review effort
-* Enhances legal decision-making
-* Supports compliance management
-* Improves legal document understanding
-* Enables intelligent legal assistance
+The system uses transformer-based Deep Learning models for understanding legal language.
 
----
+LegalBERT is used to analyze legal terminology and document context.
 
-# 5. Problem Statement
+The model helps in:
 
-Traditional legal document review requires extensive manual analysis and interpretation by legal professionals. This process is time-consuming, expensive, and prone to human errors.
+- Legal text classification
+- Clause identification
+- Context understanding
+- Important information extraction
 
-Although AI-based legal document analysis systems can automate legal document processing, they still suffer from limitations such as weak contextual understanding, limited risk assessment capabilities, poor explainability, and privacy concerns.[1][2][3]
-
-Therefore, there is a need for an intelligent AI-powered legal document analyzer that combines Large Language Models, NLP, legal clause detection, document summarization, legal risk assessment,risk scoring, and intelligent legal assistance to improve legal workflow efficiency and legal decision support.
-
----
-# 6. Proposed Solution
-
-The proposed system, **AI-Based Legal Document Analyze**r, combines NLP, Large Language Models, Clause Detection, Risk Analysis,Risk Scoring, and Legal Assistance modules to improve legal document understanding and workflow efficiency.
-
-## 6.1 System Overview
-
-The system accepts legal documents, extracts text, analyzes clauses, generates summaries, identifies risks,assign risk scores ,and provides intelligent legal insights through an interactive dashboard.
-
-## 6.2 Key Features
-
-- Legal document summarization(LLM-based — Groq LLaMA 3)
-- Clause detection(ML-based — fine-tuned LegalBERT classifier)
-- Risk assessment
-- Risk scoring(Low/Medium/High)(rule-based deterministic scoring)
-- Legal analytics dashboard
-- AI-powered legal assistant(LLM-based Q&A — Groq LLaMA 3)
-- Document classification
-- Legal question answering
-
-## 6.3 Advantages of Proposed System
-
-- Automated legal document processing reduces manual workload.
-- Faster and more accurate legal document summarization.
-- Improved clause detection and legal information extraction.
-- Enhanced legal risk assessment and risk scoring.
-- Intelligent legal assistance for better decision-making.
-- Scalable solution suitable for law firms, organizations, and legal research applications.
- ---
- # 7. Methodology
-
-## 7.1 Workflow
-  1. Upload Legal Document
-  2. Document Preprocessing
-  3. Text Extraction Module
-  4. NLP Processing
-  5. Clause Detection System
-  6. Document Classification
-  7. LLM-Based Summarization
-  8. Risk Assessment & Risk Scoring Module
-  9. Legal Analytics Dashboard
- 10. AI Legal Assistant Output
-  ---
-
-## 7.2 System Architecture
-```text
- User Input
-      ↓
- Document Upload Module(React.js Frontend)
-      ↓
-Text Extraction Engine
-      ↓
-NLP Processing Layer
-      ↓
-Clause Detection Module(Fine-tuned LegalBERT Classifier)
-      ↓
-Document Classification Module
-      ↓
-LLM-Based Summarization Engine(Groq LLaMA 3)
-      ↓
-Risk Assessment & Risk Scoring Module(Rule-Based Engine)
-      ↓
-Legal Analytics Dashboard(FastAPI + Supabase PostgreSQL)
-      ↓
-AI Legal Assistant Interface(Groq LLaMA 3 Q&A)
-      ↓
-Final Output Generation
-```
----
-## 7.3 Data Flow
-
-- The user uploads a legal document to the system.
-- The preprocessing module extracts and cleans the document text.
-- The NLP module performs tokenization and text analysis.
-- The clause detection module identifies important legal clauses.
-- The classification module categorizes the legal document.
-- The summarization module generates concise summaries.
-- The risk assessment module identifies potential legal risks and assign a risk score(Low/Medium/High).
-- The dashboard visualizes legal insights and analytics.
-- The final results are displayed to the user.
----
-## 7.4 Algorithms Used
-
-- Natural Language Processing (NLP)
-- Named Entity Recognition (NER)
-- Text Classification-Fine-tuned LegalBERT (nlpaueb/legal-bert-base-uncased)
-- Groq LLaMA 3 (llama-3.3-70b-versatile)
-- Clause Detection Algorithm — LegalBERT Classifier trained on CUAD
-- Document Summarization Model — Groq LLaMA 3 (prompt-based)
-- Risk Assessment Model — Rule-based keyword/clause risk weighting
-- Rule-Based Legal Risk Assessment Algorithm — deterministic get_risk_level() thresholding (0–49 Low, 50–79 Medium, 80–100 High)
-- Large Language Models (LLMs)
----
-# 8. Implementation Details
-
-## 8.1 Hardware Requirements
-
-| Component | Specification |
-|------------|--------------|
-| Processor | Intel i5 or Higher |
-| RAM | 8 GB or Higher |
-| Storage | 20 GB Free Space |
-| GPU | Used for model training (T4 GPU via Google Colab) |
-| Internet | Required for API Access (Groq, Supabase) |
+LegalBERT provides domain-specific knowledge for legal documents.
 
 ---
 
-## 8.2 Software Requirements
+## 5.5 LLM-Based Document Analysis
 
-| Software | Version |
-|-----------|----------|
-| Python | 3.10+ |
-| FastAPI| Latest |
-| React.js | 18+ |
-| Node.js | Latest |
-| VS code | Latest |
-| Supabase (PostgreSQL) | Latest |
-| Groq API (LLaMA 3) | llama-3.3-70b-versatile |
-| PyTorch / Transformers | Latest |
+Large Language Models are integrated to generate intelligent responses from analyzed documents.
 
----
-## 8.3 Tools and Technologies
+The LLM performs:
 
-- Python
-- FastAPI
-- React.js
-- Supabase (PostgreSQL Database)
-- SQLAlchemy (ORM)
-- Groq LLaMA 3 (llama-3.3-70b-versatile) — LLM-based summarization, Q&A, key information extraction
-- Fine-tuned LegalBERT (nlpaueb/legal-bert-base-uncased) — ML-based clause classification
-- CUAD Dataset (Contract Understanding Atticus Dataset) — model training data
-- JWT Authentication with SHA256 password hashing
-- PyTorch / HuggingFace Transformers
-- Machine Learning
-- Natural Language Processing (NLP)
-- Large Language Models (LLMs)
-- Risk Scoring Engine
-- Legal AI
-- Legal Document Analysis
----
-  # 9. Experimental Setup
+- Document summarization
+- Question answering
+- Explanation generation
+- Important point extraction
 
-The system is trained and tested using legal datasets containing contracts, agreements, legal policies, compliance documents, and publicly available legal text repositories.[1][2][3]
-
-Training and testing are performed using NLP techniques and AI-powered document analysis models.
-
----
-## Datasets Used
-
-- ContractNLI Dataset
-- CUAD (Contract Understanding Atticus Dataset)
-- Legal Case Reports Dataset
-- Public Legal Documents Dataset
----
-## Evaluation Metrics
-
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Clause Extraction Accuracy
-- Risk Scoring Accuracy
-- Summarization Quality
----
-  # 10. Results and Analysis
-
-## 10.1 Experimental Results
-
-| Metric | Existing System | Proposed System |
-|----------|----------|----------|
-| Accuracy | 85% |   |
-| Precision | 83% |   |
-| Recall | 82% |   |
-| F1-Score | 84% |    |
-| Clause Extraction Accuracy | 80% |    |
-| Risk Scoring Accuracy | 75% |    |
-| Summarization Quality | Moderate |    |
-
----
-## 10.2 Graphical Analysis
-
-The proposed AI-Based Legal Document Analyzer achieved improved performance in legal document summarization, clause extraction, and document classification compared to existing systems.
-
----
-## 10.3 Observations
-
-- Improved clause extraction accuracy.
-- Faster legal document review.
-- Better legal document understanding.
-- Accurate legal risk assessment and risk scoring.
-- Reduced manual effort.
-- Enhanced legal decision support.
-- Improved summarization quality.
----
-  # 11. Discussion
-
-The proposed system improves legal document analysis efficiency using AI-powered summarization, clause extraction, and intelligent legal assistance.
-
-Challenges include handling highly complex legal language, maintaining contextual understanding, and ensuring accurate legal interpretation.[1][2][3]
+The model converts complex legal information into simplified explanations.
 
 ---
 
-# 12. Limitations
+## 5.6 Clause Detection
 
-- May misinterpret highly complex legal clauses
-- Requires high-quality legal documents
-- Limited legal reasoning capability
-- Risk scores may very based on document complexity
-- Computational requirements for large documents
+The system identifies important clauses present inside the legal document.
 
----
+Detected clauses include:
 
-# 13. Future Scope
+- Agreement Clause
+- Payment Clause
+- Termination Clause
+- Liability Clause
+- Confidentiality Clause
+- Dispute Resolution Clause
+- Jurisdiction Clause
 
-- Multilingual legal document analysis
-- Explainable AI for legal reasoning
-- Voice-based legal assistant
-- Advanced Legal risk prediction
-- Integration with legal databases
-- Mobile application support
+The extracted clauses are displayed separately for better understanding.
 
 ---
 
-# 14. Conclusion
+## 5.7 Summary Generation
 
-This paper presented a comparative study of three AI-based legal document analysis research papers and analyzed their strengths and limitations. Existing systems face challenges such as limited contextual understanding, poor clause extraction accuracy, and lack of intelligent legal reasoning.[1][2][3]
+The analyzed document is summarized using LLM technology.
 
-To overcome these issues, the proposed AI-Based Legal Document Analyzer combines NLP, legal text processing, document summarization, clause extraction,risk scoring, and intelligent legal assistance.
+The summary provides:
 
-The proposed framework aims to improve legal document understanding, reduce manual effort, and provide a smarter and more reliable legal analysis system.
+- Main purpose of agreement
+- Important obligations
+- Important conditions
+- Key legal points
 
----
-# 15. References
-
-[1] Ashwini V. Zadgaonkar, Avinash J. Agrawal,
-An Overview of Information Extraction Techniques for Legal Document Analysis and Processing,
-International Journal of Electrical and Computer Engineering (IJECE), Vol. 11, No. 6, 2021.
-🔗 Link: http://ijece.iaescore.com
-
-[2] Rummana Firdaus, Sunidhi S Babu, Sneha Nayak M S, Manvitha P,
-An AI-Based Smart Legal Assistant for Automated Legal Document Analysis, IRE Journals, Volume 9, Issue 6, 2025.
-🔗 Link: https://doi.org/10.64388/IREV9I6-1713158
-
-[3] P. Vimala Imogen, J. Sreenidhi, V. Nivedha,
-AI-Powered Legal Documentation Assistant, Journal of Artificial Intelligence and Capsule Networks, Volume 6, Issue 2, 2024.
-🔗 Link: https://doi.org/10.36548/jaicn.2024.2.007
+This helps users understand long documents quickly.
 
 ---
 
-# Declaration
+# 6. Implementation
 
-We hereby declare that this research work is original and has been carried out under the guidance of faculty mentors. All references used in this paper have been properly cited.
+## 6.1 System Architecture
+
+The system follows a three-layer architecture:
+
+### Frontend Layer
+
+Developed using:
+
+**React.js**
+
+Responsibilities:
+
+- User interface
+- File upload
+- Analysis display
+- Clause visualization
+- Summary presentation
+
+
+---
+
+### Backend Layer
+
+Developed using:
+
+**FastAPI**
+
+Responsibilities:
+
+- API development
+- Document processing
+- AI model communication
+- Data handling
+- Response generation
+
+
+---
+
+### Database Layer
+
+Implemented using:
+
+**Supabase PostgreSQL**
+
+The database stores:
+
+- User information
+- Uploaded document details
+- Extracted text
+- Generated summaries
+- Analysis results
+
+
+---
+
+## 6.2 Technology Stack
+
+| Component | Technology |
+|----------|------------|
+| Frontend | React.js |
+| Backend | FastAPI |
+| Database | Supabase PostgreSQL |
+| AI Model | LegalBERT |
+| LLM | LLaMA / Groq API |
+| NLP Processing | Transformer Models |
+| Document Processing | PDF Extraction Libraries |
+| API Communication | REST API |
+
+---
+
+## 6.3 AI Model Integration
+
+The system integrates AI models for legal document understanding.
+
+### LegalBERT
+
+LegalBERT is a transformer-based model trained on legal text.
+
+Used for:
+
+- Legal sentence understanding
+- Clause classification
+- Document analysis
+
+
+### LLaMA / Groq LLM
+
+The Large Language Model generates:
+
+- Human-readable summaries
+- Legal explanations
+- Document insights
+
+The combination of LegalBERT and LLM improves accuracy and usability.
+
+---
+
+# 7. Results and Analysis
+
+The developed system successfully analyzes legal documents and provides automated insights.
+
+The system performs the following tasks:
+
+---
+
+## 7.1 Document Analysis
+
+The system accepts legal PDF documents and extracts meaningful text.
+
+The extracted information is processed through AI models for further analysis.
+
+---
+
+## 7.2 Clause Detection Results
+
+The system identifies important clauses from uploaded documents.
+
+Example output:
+
+✓ Payment Clause  
+Found in document
+
+✓ Termination Clause  
+Found in document
+
+✓ Dispute Resolution Clause  
+Found in document
+
+✓ Liability Clause  
+Found in document
+
+---
+
+## 7.3 Document Summarization
+
+The LLM generates a concise summary from lengthy legal documents.
+
+The generated summary includes:
+
+- Agreement purpose
+- Parties involved
+- Important terms
+- Major responsibilities
+
+---
+
+## 7.4 Accuracy Evaluation
+
+The performance of the system can be evaluated using:
+
+- Clause detection accuracy
+- Summary quality
+- Information extraction accuracy
+
+The results demonstrate that AI techniques reduce manual document review effort.
+
+---
+
+# 8. Discussion
+
+The integration of Deep Learning and Large Language Models improves automated legal document understanding.
+
+Traditional approaches require manual reading and interpretation, whereas the proposed system automatically identifies important information.
+
+LegalBERT provides better understanding of legal terminology due to its domain-specific training.
+
+LLMs improve user interaction by generating natural language explanations and summaries.
+
+The system acts as an AI assistant that helps users quickly review legal documents.
+
+However, AI-generated outputs should be considered as assistance tools and not replacements for professional legal advice.
+
+---
+
+# 9. Conclusion
+
+The AI-Based Legal Document Analyzer demonstrates the application of Artificial Intelligence in the legal domain.
+
+The system successfully combines:
+
+- Natural Language Processing
+- Deep Learning
+- Transformer Models
+- Large Language Models
+
+to analyze legal documents automatically.
+
+The developed platform provides:
+
+- Clause detection
+- Document summarization
+- Legal information extraction
+- AI-based document assistance
+
+The system reduces document review time and improves accessibility of legal information.
+
+This project highlights the potential of AI technologies in transforming traditional legal document analysis.
+
+---
+
+# 10. Future Scope
+
+Future improvements can include:
+
+## Multi-language Legal Analysis
+
+Support for multiple languages to analyze legal documents from different regions.
+
+---
+
+## Advanced Risk Detection
+
+AI models can be enhanced to detect:
+
+- Missing clauses
+- Risky conditions
+- Unusual agreement terms
+
+---
+
+## Voice-Based Legal Assistant
+
+Integration of voice interaction for easier document querying.
+
+---
+
+## Legal Chatbot Integration
+
+A conversational AI assistant can be added for asking questions about uploaded documents.
+
+---
+
+## Fine-Tuned Legal LLM
+
+Future work can include training specialized legal LLM models with larger datasets.
+
+---
+
+## Integration With Legal Databases
+
+The system can be connected with legal resources for improved information retrieval.
 
 ---
 
@@ -556,6 +495,45 @@ We sincerely thank:
 * Industry Experts
 
 for their continuous support and guidance.
+
+---
+
+# References
+
+[1] Zheng, L., Guha, N., Anderson, B., Henderson, P., Ho, D. E.,
+"LEGAL-BERT: The Muppets Straight Out of Law School", 2020.
+
+[2] Hendrycks, D., Burns, C., Chen, A., Ball, S.,
+"CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review", 2021.
+
+[3] Zadgaonkar, A. V., Agrawal, A. J.,
+"An Overview of Information Extraction Techniques for Legal Document Analysis and Processing", 
+International Journal of Electrical and Computer Engineering, 2021.
+
+[4] Vaissnave, V., Deepalakshmi, P.,
+"An Artificial Intelligence Based Analysis in Legal Domain", 2019.
+
+[5] Vimala Imogen, P., Sreenidhi, J., Nivedha, V.,
+"AI-Powered Legal Documentation Assistant",
+Journal of Artificial Intelligence and Capsule Networks, Volume 6 Issue 2, 2024.
+
+[6] Meena et al.,
+"Enhancing Legal Document Management Efficiency: An AI-Powered Solution Addressing Interpretation Challenges", 2024.
+
+[7] Firdaus, R., Babu, S. S., Nayak, S. M. S., Manvitha, P.,
+"An AI-Based Smart Legal Assistant for Automated Legal Document Analysis",
+IRE Journals, Volume 9 Issue 6, 2025.
+
+[8] Devlin, J., Chang, M. W., Lee, K., Toutanova, K.,
+"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", 2019.
+
+[9] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J. et al.,
+"Attention Is All You Need", 2017.
+
+[10] Lewis, P., Perez, E., Piktus, A., Petroni, F. et al.,
+"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", 2020.
+
+---
 
 
 
