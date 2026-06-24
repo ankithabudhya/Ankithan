@@ -17,7 +17,7 @@
 
 Legal documents contain large volumes of complex information including clauses, agreements, obligations, conditions, and legal terminology. Reviewing such documents manually requires significant time, legal expertise, and careful analysis. Users without legal background often face difficulties understanding important terms, identifying risks, and extracting meaningful information from lengthy documents.
 
-This project presents an **AI-Based Legal Document Analyzer** that uses **Deep Learning, Natural Language Processing (NLP), and Large Language Models (LLMs)** to automatically analyze legal documents. The system processes uploaded legal documents, extracts important clauses, generates simplified summaries, and provides meaningful legal insights.
+This project presents an **AI-Based Legal Document Analyzer** that uses **Deep Learning, Natural Language Processing (NLP), and Large Language Models (LLMs)** to automatically analyze legal documents. The system processes uploaded legal documents, extracts important clauses,generates simplified summaries, detects legal clauses, performs document risk assessment, identifies potential legal concerns, and provides meaningful legal insights. The system also evaluates document risk levels by analyzing legal terms, obligations, liabilities, and unfavorable conditions present in the document.
 
 The proposed system combines transformer-based legal language models such as **LegalBERT** with LLM-based analysis techniques to improve document understanding. The application acts as an intelligent legal assistant that helps users review agreements, contracts, and legal documents efficiently.
 
@@ -29,7 +29,9 @@ The developed solution reduces manual document review effort, improves accessibi
 
 ## Keywords
 
-Artificial Intelligence (AI), Legal Document Analysis, Natural Language Processing (NLP), Large Language Model (LLM), Deep Learning, LegalBERT, Transformer Architecture, Clause Detection, Document Summarization, Legal Assistant.
+## Keywords
+
+Artificial Intelligence (AI), Legal Document Analysis, Natural Language Processing (NLP), Large Language Model (LLM), Deep Learning, LegalBERT, Transformer Architecture, Clause Detection, Document Summarization, Legal Assistant, Risk Analysis, Legal Risk Assessment, Red Flag Detection, Risk Prediction.
 
 ---
 
@@ -45,7 +47,7 @@ Large Language Models such as GPT-based models and LLaMA-based models have demon
 
 In the legal domain, specialized language models such as LegalBERT have been developed by training transformer architectures on legal datasets. These models improve performance in legal classification, clause detection, and information retrieval tasks.
 
-This project proposes an **AI-Based Legal Document Analyzer** that combines Legal NLP techniques and LLM-based analysis to automatically process legal documents. The system identifies important clauses, generates summaries, and provides simplified explanations to improve legal document accessibility.
+This project proposes an **AI-Based Legal Document Analyzer** that combines Legal NLP techniques and LLM-based analysis to automatically process legal documents. The system identifies important clauses, generates summaries, and provides simplified explanations to improve legal document accessibility.Additionally, the system performs legal risk assessment by analyzing document content, identifying possible liabilities, unfavorable conditions, missing information, and potential risk factors. The risk analysis module provides risk scores and red flag detection to help users understand possible legal concerns before making decisions.
 
 ---
 
@@ -111,11 +113,17 @@ The main objectives of this research are:
 
 5. To integrate LegalBERT-based legal text understanding.
 
-6. To develop an AI legal assistant for document interpretation.
+6. To perform automated legal risk analysis by identifying legal risks, liabilities, and unfavorable conditions.
 
-7. To store and manage document analysis results securely.
+7. To classify documents based on risk levels such as Low Risk, Medium Risk, and High Risk.
 
-8. To evaluate the effectiveness and accuracy of the developed system.
+8. To provide party-wise risk assessment and identify risk exposure of involved parties.
+
+9. To develop an AI legal assistant for document interpretation.
+
+10. To store and manage document analysis results securely.
+
+11. To evaluate the effectiveness and accuracy of the developed system.
 
 ---
 # 5. Methodology
@@ -236,6 +244,31 @@ The summary provides:
 
 This helps users understand long documents quickly.
 
+## 5.8 Legal Risk Analysis
+
+The system performs automated risk assessment of uploaded legal documents.
+
+The risk analysis module examines the document content using NLP techniques and AI-based interpretation.
+
+The system identifies:
+
+- Financial obligations
+- Liability conditions
+- Unfavorable clauses
+- Legal responsibilities
+- Dispute-related risks
+- Possible negative outcomes
+
+The generated risk analysis includes:
+
+- Overall Document Risk Score
+- Risk Category (Low, Medium, High)
+- Risk Explanation
+- Party-wise Risk Assessment
+- Red Flag Identification
+
+This helps users understand possible legal concerns before reviewing the complete document.
+
 ---
 
 # 6. Implementation
@@ -290,7 +323,11 @@ The database stores:
 - Uploaded document details
 - Extracted text
 - Generated summaries
-- Analysis results
+- Detected legal clauses
+- Risk scores
+- Party-wise risk analysis
+- Red flag information
+- Complete analysis results
 
 
 ---
@@ -334,6 +371,25 @@ The Large Language Model generates:
 - Document insights
 
 The combination of LegalBERT and LLM improves accuracy and usability.
+
+### Risk Assessment Module
+
+The risk assessment module analyzes extracted legal information and identifies possible risks.
+
+The module evaluates:
+
+- Contract obligations
+- Liability exposure
+- Legal conflicts
+- Unfavorable terms
+- Party responsibilities
+
+The output is displayed through:
+
+- Document Risk Score
+- Risk Level Indicator
+- Risk by Party
+- Red Flags
 
 ---
 
@@ -386,7 +442,49 @@ The generated summary includes:
 
 ---
 
-## 7.4 Accuracy Evaluation
+## 7.4 Risk Analysis Results
+
+The system performs automated risk analysis on uploaded legal documents.
+
+### Document Risk Score
+
+The system calculates a risk percentage based on identified legal conditions.
+
+The risk level is classified as:
+
+- Low Risk
+- Medium Risk
+- High Risk
+
+
+### Risk by Party
+
+The system evaluates risk exposure for each party involved in the document.
+
+Example:
+
+Party A:
+- Possible financial liability
+- Higher obligation exposure
+
+Party B:
+- Lower risk exposure
+- Stronger legal position
+
+
+### Red Flag Detection
+
+The system highlights important concerns such as:
+
+- Liability findings
+- Unfavorable outcomes
+- Financial obligations
+- Missing protections
+- Dispute-related issues
+
+These warnings help users quickly identify important legal concerns.
+
+## 7.5 Accuracy Evaluation
 
 The performance of the system can be evaluated using:
 
@@ -450,13 +548,15 @@ Support for multiple languages to analyze legal documents from different regions
 
 ---
 
-## Advanced Risk Detection
+## Advanced Risk Analysis
 
-AI models can be enhanced to detect:
+Future improvements can include:
 
-- Missing clauses
-- Risky conditions
-- Unusual agreement terms
+- AI-based clause severity scoring
+- Automatic contract comparison
+- Risk prediction models
+- Legal outcome prediction
+- Personalized risk recommendations
 
 ---
 
