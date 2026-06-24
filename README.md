@@ -12,7 +12,6 @@
 *1DA24MC007*
 
 </div>
-
 ## Abstract
 
 Legal documents contain large volumes of complex information including clauses, agreements, obligations, conditions, and legal terminology. Reviewing such documents manually requires significant time, legal expertise, and careful analysis. Users without legal background often face difficulties understanding important terms, identifying risks, and extracting meaningful information from lengthy documents.
